@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EgarBTPhone</string>
+    <string name="bt_connect_device">请通过手机连接车机</string>
+    <string name="bt_name">蓝牙名称:</string>
+    <string name="bt_settings">蓝牙设置</string>
+    <string name="bt_keyboard">拨号键盘</string>
+    <string name="bt_call_record">通话记录</string>
+    <string name="bt_book">电话本</string>
+    <string name="bt_collection">收藏</string>
+
+</resources>
