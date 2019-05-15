@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.egar.btphone.view.CallUIView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    android:keepScreenOn="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:text="@string/call_full_ui_title"
+        android:textColor="@color/color_white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/line_title"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_yellow_1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/call_full_ui_call_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="86dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="7" >
+
+                    <TextView
+                        android:id="@+id/call_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="40sp" />
+                    <TextView
+                        android:id="@+id/call_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/call_name"
+                        android:textColor="@color/color_white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/call_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/call_number"
+                        android:textColor="@color/color_white"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/call_state_dialing"
+                        android:textSize="50sp" />
+
+                    <TextView
+                        android:id="@+id/call_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_white"
+                        android:layout_below="@id/call_state"
+                        android:layout_marginTop="15dp"
+                        android:textSize="32sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" >
+
+                    <ImageView
+                        android:id="@+id/device_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="86dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/phone_ico" />
+
+                    <TextView
+                        android:id="@+id/device_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/device_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:textSize="@dimen/call_ui_btn_font_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_marginLeft="43dp"
+                android:layout_marginRight="43dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/call_full_ui_terminate"
+                        android:layout_width="222dp"
+                        android:layout_height="81dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/call_ui_full_terminate_selector"
+                        android:contentDescription="@string/call_full_ui_terminate"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/call_full_ui_pad"
+                        android:layout_width="222dp"
+                        android:layout_height="81dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/call_ui_full_keyboard_selector"
+                        android:contentDescription="@string/call_full_ui_pad" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/call_full_ui_mute"
+                        android:layout_width="222dp"
+                        android:layout_height="81dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/call_ui_full_mute_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/call_full_ui_handset"
+                        android:layout_width="222dp"
+                        android:layout_height="81dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/call_ui_full_audio_selector"
+                        android:contentDescription="@string/call_full_ui_handset" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/call_full_ui_pad_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_black_090"
+            android:contentDescription="@string/keybroad_layout"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <include layout="@layout/key_12_pad" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</com.egar.btphone.view.CallUIView>

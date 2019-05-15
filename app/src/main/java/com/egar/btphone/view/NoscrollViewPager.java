@@ -12,7 +12,7 @@ import android.view.MotionEvent;
  */
 public class NoscrollViewPager extends ViewPager {
     private String TAG = getClass().getSimpleName();
-    private boolean noScroll = false;
+    private boolean noScroll = true;
 
     public NoscrollViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);

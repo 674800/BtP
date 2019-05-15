@@ -5,18 +5,23 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 
+import com.egar.btphone.AppApplication;
 import com.egar.btphone.permissioin.Permissions;
-
+import com.egar.btphone.utils.CrashHandler;
 
 
 /**
  * Created by ybf on 2019/4/29.
  */
 public class BaseActivity extends FragmentActivity {
+
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         Permissions.requestPermissionAll(this);
+        CrashHandler.init(AppApplication.getContext());
+
     }
 
     /**
@@ -33,4 +38,5 @@ public class BaseActivity extends FragmentActivity {
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
+
 }

@@ -16,6 +16,30 @@
 
 <resources>
     <dimen name="text_size">28sp</dimen>
-    <dimen name="line">1dp</dimen>
+    <dimen name="line">2dp</dimen>
+    <dimen name="call_ui_btn_font_size">25sp</dimen>
+    <dimen name="call_record_toast">40sp</dimen>
 
+
+    <dimen name="tab_text_size">24sp</dimen>
+    <dimen name="popup_view_text_size">40dp</dimen>
+
+    <dimen name="calling_name_text_size">32sp</dimen>
+    <dimen name="calling_number_text_size">24sp</dimen>
+    <dimen name="calling_timer_text_size">30sp</dimen>
+
+    <dimen name="dailpad_volume_text_size">20sp</dimen>
+    <dimen name="dialpad_edit_numbers_size">40sp</dimen>
+    <dimen name="dialpad_key_numbers_size">42sp</dimen>
+
+    <dimen name="list_row_name_text_size">18sp</dimen>
+    <dimen name="list_row_number_text_size">16sp</dimen>
+    <dimen name="list_row_label_text_size">15sp</dimen>
+
+    <dimen name="log_list_row_name_text_size">36sp</dimen>
+    <dimen name="log_list_row_number_text_size">44sp</dimen>
+    <dimen name="log_list_row_label_text_size">36sp</dimen>
+
+    <dimen name="index_bar_view_text_size">8sp</dimen>
+    <dimen name="about_fragment_item_text_size">20sp</dimen>
 </resources>

@@ -2,10 +2,9 @@ package com.egar.btphone;
 
 import android.app.Application;
 import android.content.Context;
-import android.content.pm.PackageManager;
-import android.support.annotation.NonNull;
 
-import com.egar.btphone.permissioin.Permissions;
+import com.egar.btphone.Theme.SkinManager;
+
 
 /**
  * Created by ybf on 2019/4/29.
@@ -17,7 +16,7 @@ public class AppApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mContext = getApplicationContext();
-
+        SkinManager.getInstance().init(mContext);
     }
 
     public static Context getContext(){

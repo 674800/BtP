@@ -7,68 +7,71 @@
     tools:context=".activity.MainActivity">
 
     <RadioGroup
+        android:id="@+id/rg_radiogroup"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="120dp"
+        android:background="@drawable/title_bg"
         android:orientation="horizontal">
 
         <RadioButton
+            android:id="@+id/rb_keyboard"
             style="@style/radiobutton_style"
             android:checked="true"
             android:text="@string/bt_keyboard" />
 
         <TextView
-            android:layout_width="@dimen/line"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimary" />
+            android:background="@drawable/title_line" />
 
         <RadioButton
+            android:id="@+id/rb_call_record"
             style="@style/radiobutton_style"
             android:text="@string/bt_call_record" />
 
         <TextView
-            android:layout_width="@dimen/line"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimary" />
+            android:background="@drawable/title_line" />
 
         <RadioButton
+            android:id="@+id/rb_call_book"
             style="@style/radiobutton_style"
             android:text="@string/bt_book" />
 
         <TextView
-            android:layout_width="@dimen/line"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimary" />
+            android:background="@drawable/title_line" />
 
         <RadioButton
-
+            android:id="@+id/rb_collection"
             style="@style/radiobutton_style"
             android:text="@string/bt_collection" />
 
         <TextView
-            android:layout_width="@dimen/line"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimary" />
+            android:background="@drawable/title_line" />
 
         <RadioButton
+            android:id="@+id/rb_btsetting"
             style="@style/radiobutton_style"
             android:text="@string/bt_settings" />
     </RadioGroup>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/line"
-        android:background="@color/colorPrimary" />
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6">
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
 
         <com.egar.btphone.view.NoscrollViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></com.egar.btphone.view.NoscrollViewPager>
+            android:layout_height="match_parent">
+
+        </com.egar.btphone.view.NoscrollViewPager>
     </FrameLayout>
 
 </LinearLayout>

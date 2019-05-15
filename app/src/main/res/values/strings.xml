@@ -7,5 +7,44 @@
     <string name="bt_call_record">通话记录</string>
     <string name="bt_book">电话本</string>
     <string name="bt_collection">收藏</string>
+    <string name="keyboard_1">1</string>
+    <string name="keyboard_2">2</string>
+    <string name="keyboard_3">3</string>
+    <string name="keyboard_4">4</string>
+    <string name="keyboard_5">5</string>
+    <string name="keyboard_6">6</string>
+    <string name="keyboard_7">7</string>
+    <string name="keyboard_8">8</string>
+    <string name="keyboard_9">9</string>
+    <string name="keyboard_0">0</string>
+    <string name="keyboard_star">*</string>
+    <string name="keyboard_pound">#</string>
+
+    <!-- 通话UI -->
+    <string name="call_full_ui_terminate">挂\t\t断</string>
+    <string name="call_full_ui_pad">键\t\t盘</string>
+    <string name="call_full_ui_mute">静\t\t音</string>
+    <string name="call_full_ui_handset">听\t\t筒</string>
+    <string name="call_full_ui_title">通\t话</string>
+    <string name="call_half_ui_accept">接\t\t听</string>
+    <string name="call_half_ui_terminate">挂\t\t断</string>
+    <string name="call_state_active">通话中...</string>
+    <string name="call_state_alerting">呼叫中...</string>
+    <string name="call_state_dialing">拨号中...</string>
+    <string name="call_state_incoming">来电</string>
+    <string name="call_state_terminate">通话结束</string>
+
+    <string name="keybroad_layout">键盘布局</string>
+    <string name="call_half_ui">call half ui</string>
+    <string name="call_time">拨打时间</string>
+
+    <!--下拉刷新控件-->
+    <string name="ptr_pull_to_refresh">下拉刷新</string>
+    <string name="ptr_release_to_refresh">释放刷新</string>
+    <string name="ptr_refreshing">正在刷新</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+
+    <string name="call_record_null">列表为空</string>
+    <string name="call_record_toast">车机手机通过蓝牙连接时会读取手机端的通话记录</string>
 
 </resources>

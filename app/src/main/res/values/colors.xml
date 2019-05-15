@@ -6,5 +6,59 @@
     <color name="transparent">#00000000</color>
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
+    <color name="color_white_005">#0dFFFFFF</color>
 
+    <color name="color_white">#FFFFFFFF</color>
+    <!-- Grey-->
+    <color name="color_grey_1">#2d343b</color>
+    <color name="color_grey_2">#383e45</color>
+    <color name="color_grey_3">#1d1e20</color>
+    <color name="color_grey_4">#545454</color>
+    <color name="color_grey_5">#6c6c6c</color>
+    <color name="color_grey_6">#777777</color>
+    <color name="color_grey_7">#494949</color>
+    <color name="color_grey_8">#6b6b6b</color>
+
+
+    <!-- Blue-->
+    <color name="color_blue_1">#4a90e2</color>
+    <color name="color_blue_2">#0b61ff</color>
+    <color name="color_blue_3">#250b61ff</color>
+    <!-- Black -->
+    <color name="color_black">#FF000000</color>
+    <color name="color_black_010">#20000000</color>
+    <color name="color_black_020">#33000000</color>
+    <color name="color_black_030">#4c000000</color>
+    <color name="color_black_040">#66000000</color>
+    <color name="color_black_050">#7a000000</color>
+    <color name="color_black_060">#99000000</color>
+    <color name="color_black_070">#b2000000</color>
+    <color name="color_black_080">#cc000000</color>
+    <color name="color_black_090">#e5000000</color>
+    <color name="color_black_100">#ff000000</color>
+
+    <!-- red -->
+    <color name="color_red_100">#ffff0000</color>
+    <color name="color_red_090">#e5ff0000</color>
+    <color name="color_red_080">#ccff0000</color>
+    <color name="color_red_070">#62ff0000</color>
+    <color name="color_red_060">#99ff0000</color>
+    <color name="color_red_050">#7aff0000</color>
+    <color name="color_red_040">#66ff0000</color>
+    <color name="color_red_030">#4cff0000</color>
+    <color name="color_red_020">#33ff0000</color>
+    <color name="color_red_010">#20ff0000</color>
+    <color name="color_red">#ffff0000</color>
+
+    <!-- yellow -->
+    <color name="color_yellow">#ffff00</color>
+    <color name="color_yellow_1">#b09900</color>
+    <color name="color_yellow_2">#33b09900</color>
+
+    <color name="color_green">#52bd27</color>
+    <color name="color_red_1">#aa1638</color>
+    <color name="color_green_1">#36970f</color>
+    <color name="color_red_2">#AF1026</color>
+    <color name="color_orange">#f36634</color>
+    <color name="color_orange_1">#ff7b4c</color>
 </resources>

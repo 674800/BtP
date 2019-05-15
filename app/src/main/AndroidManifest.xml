@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.egar.btphone">
+    package="com.egar.btphone"
+    android:persistent="true"
+    android:sharedUserId="android.uid.system" >
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name=".AppApplication"
         android:allowBackup="true"
@@ -11,19 +17,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.DialogActivity"
-            android:theme="@style/DialogActivityTheme"
-            android:launchMode="singleTask">
+        <activity
+            android:name=".activity.DialogActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/DialogActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainActivity"
-            android:launchMode="singleTask">
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleInstance"></activity>
 
-        </activity>
+        <service android:name=".service.CallUiService"
+            android:enabled="true"
+            android:exported="true">
+
+        </service>
+        <receiver android:name=".receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.startservice" />
+                <action android:name="com.open.ui" />
+                <action android:name="com.close.ui" />
+                <action android:name="com.close.half.ui" />
+                <action android:name="com.open.half.ui" />
+
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

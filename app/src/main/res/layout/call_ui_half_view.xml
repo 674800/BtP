@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.egar.btphone.view.CallUIView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/call_half_ui"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@color/color_black_080"
+        android:contentDescription="@string/call_half_ui">
+
+        <RelativeLayout
+            android:id="@+id/call_half_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/call_half_btn_accept"
+                android:layout_width="280dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/call_ui_half_accept_selector"
+                android:contentDescription="@string/call_half_ui_accept"
+                android:text="@string/call_half_ui_accept"
+                android:textColor="@color/color_white"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/call_half_btn_terminate"
+                android:layout_width="280dp"
+                android:layout_height="160dp"
+                android:layout_alignTop="@id/call_half_btn_accept"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/call_half_btn_accept"
+                android:background="@drawable/call_ui_half_terminate_selector"
+                android:contentDescription="@string/call_half_ui_terminate"
+                android:text="@string/call_half_ui_terminate"
+                android:textColor="@color/color_white"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/call_half_ui_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/call_half_btn_accept"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/call_half_btn_terminate"
+                android:singleLine="true"
+                android:textColor="@color/color_white"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/call_half_ui_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/call_half_ui_info"
+                android:layout_below="@id/call_half_ui_info"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/color_white"
+                android:textSize="36sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignTop="@id/call_half_content"
+            android:background="@color/color_white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/call_half_content"
+            android:orientation="vertical"></LinearLayout>
+
+    </RelativeLayout>
+</com.egar.btphone.view.CallUIView>

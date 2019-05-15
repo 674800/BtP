@@ -20,7 +20,7 @@ public class DialogActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (!isopen) {
-            setContentView(R.layout.activity_splash);
+            setContentView(R.layout.activity_dialog);
         } else {
             EnterMainActivity();
             finish();

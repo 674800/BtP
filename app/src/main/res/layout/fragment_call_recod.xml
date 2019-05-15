@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="@dimen/text_size"
-        android:text="@string/bt_call_record" />
-</LinearLayout>
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.egar.btphone.view.PullToRefreshListView
+                android:id="@+id/pull_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.egar.btphone.view.PullToRefreshListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_record_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/call_record_null"
+            android:textColor="@color/white"
+            android:textSize="@dimen/call_record_toast" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_record_null"
+            android:layout_centerHorizontal="true"
+            android:text="@string/call_record_toast"
+            android:textColor="@color/white"
+            android:textSize="@dimen/call_record_toast" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <GridView
+        android:id="@+id/frag_save_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="@dimen/text_size"
-        android:text="@string/bt_collection" />
-</LinearLayout>
+        android:numColumns="2" >
+    </GridView>
+
+    <View
+        android:id="@+id/line_y"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/line_y"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
